@@ -5,6 +5,12 @@ It does not require a tracking camera or the Ultraleap Tracking service to be ru
 
 This can be used to check if the python module has built successfully.
 """
+import sys
+import os
+
+# Add the path to the leap module
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'leapc-python-api')))
+
 import leap
 
 
